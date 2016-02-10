@@ -1,7 +1,7 @@
 %h1 All notes
 
--@notes.each do |f|
-  =f.title
-  %br
-  =f.text
-  %br
+%ul
+  -@notes.each do |note|
+    %li.list-unstyled
+      =note.id
+      =link_to note.title, note
