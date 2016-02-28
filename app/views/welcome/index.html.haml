@@ -1,5 +1,17 @@
+=stylesheet_link_tag "menu"
+
+%ul.menu
+  %li.menu
+    %a.active{:href => welcome_index_url} Home
+  %li.menu
+    %a{:href => notes_url} Show notes
+  %li.menu
+    %a{:href => new_note_url} New Note
+  %ul.undermenu{:style => "float:right;list-style-type:none;"}
+    %li.undermenu
+      %a{:href => about_url} About
+
 %h1 Welcome to Notes!
 
 %p
-=link_to("Show Notes", notes_url)
-=link_to("New Note", new_note_url)
+Her kan du finde, oprette og opdatere notes.

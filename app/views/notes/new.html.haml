@@ -1,3 +1,16 @@
+=stylesheet_link_tag "menu"
+
+%ul.menu
+  %li.menu
+    %a{:href => welcome_index_url} Home
+  %li.menu
+    %a{:href => notes_url} Show notes
+  %li.menu
+    %a.active{:href => new_note_url} New Note
+  %ul.undermenu{:style => "float:right;list-style-type:none;"}
+    %li.undermenu
+      %a{:href => about_url} About
+
 %h1 New Note
 = form_for(@note) do |f|
   =f.label :title

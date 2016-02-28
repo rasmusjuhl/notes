@@ -1,0 +1,48 @@
+=stylesheet_link_tag "menu"
+
+%ul.menu
+  %li.menu
+    %a{:href => welcome_index_url} Home
+  %li.menu
+    %a{:href => notes_url} Show notes
+  %li.menu
+    %a{:href => new_note_url} New Note
+  %ul.undermenu{:style => "float:right;list-style-type:none;"}
+    %li.undermenu
+      %a.active{:href => about_url} About
+
+%h1 About
+
+%p
+  Denne hjemmeside er udvilket af Rasmus Østergaard Juhl og
+  Silas Jeppe Christensen i forbindelse med faget "Web Development
+  Open Source 1". Opgaven er lavet ud fra nedenstående:
+
+%h2 Notes app
+%p
+  As part of the module Web Development Open Source you will create your
+  own application for writing notes. The user interface should be a web
+  page and the notes should be stored in a database.
+%p This assignment should be done individually.
+
+%h3 Requirements:
+
+%ul
+  %li Web page with HTML conforming to the HTML 5 specification
+  %li Styling the web page using CSS
+  %li Functionality:
+  %ul
+    %li Create a note and store it in the database
+    %li Display notes from the database
+    %li Update notes from the database
+    %li Delete notes from the database
+
+%h3 It is up to you to decide:
+
+%ul
+  %li what kind of properties a note should have (like a title, date etc.)
+  %li if the notes should be organized somehow (like category, tags etc.)
+  %li the choice of web server and database system (Open Source...)
+%p
+  The notes app should be ready to present in the
+  last session (and for dmaf0216 at the examination).
