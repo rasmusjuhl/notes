@@ -1,5 +1,5 @@
 =stylesheet_link_tag "menu"
-
+=stylesheet_link_tag "footer"
 
 %ul.menu
   %li.menu
@@ -20,3 +20,8 @@
       =note.id
       =link_to note.title, note
       =link_to "Destroy", note, method: :delete, data: { confirm: "Are you sure you want to delete this note?"}
+
+#footer
+  %span
+    Your IP address is:
+    %script{:src => "http://www.snaphost.com/tools/ip.aspx", :type => "text/javascript"}

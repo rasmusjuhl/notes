@@ -1,4 +1,5 @@
 =stylesheet_link_tag "menu"
+=stylesheet_link_tag "footer"
 
 %ul.menu
   %li.menu
@@ -14,4 +15,8 @@
 %h1 Welcome to Notes!
 
 %p
-Her kan du finde, oprette og opdatere notes.
+  Her kan du finde, oprette og opdatere notes.
+
+#footer
+  Your IP address is:
+  %script{:src => "http://www.snaphost.com/tools/ip.aspx", :type => "text/javascript"}

@@ -1,4 +1,5 @@
 =stylesheet_link_tag "menu"
+=stylesheet_link_tag "footer"
 
 %ul.menu
   %li.menu
@@ -19,3 +20,8 @@
   =f.label :text
   =f.text_field :text
   =f.submit
+
+#footer
+  %span
+    Your IP address is:
+    %script{:src => "http://www.snaphost.com/tools/ip.aspx", :type => "text/javascript"}
