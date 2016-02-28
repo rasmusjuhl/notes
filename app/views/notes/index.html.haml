@@ -1,3 +1,17 @@
+=stylesheet_link_tag "menu"
+
+
+%ul.menu
+  %li.menu
+    %a{:href => "#home"} Home
+  %li.menu
+    %a.active{:href => "#notes"} Show notes
+  %li.menu
+    %a{:href => "#new"} New Note
+  %ul.undermenu{:style => "float:right;list-style-type:none;"}
+    %li.undermenu
+      %a{:href => "#about"} About
+
 %h1 All notes
 
 %ul
