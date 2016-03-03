@@ -35,12 +35,6 @@ gem 'haml'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
-gem 'unicorn'
-
-# Set default app server to unicorn
-gem "unicorn-rails"
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -65,4 +59,11 @@ group :development do
   gem "paperclip", "~> 4.3"
   #The following gem is the latest version of papaerclip (Commented out)
   #gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+end
+
+group :production do
+  # Use Unicorn as the app server
+  gem 'unicorn'
+  # Set default app server to unicorn
+  gem "unicorn-rails"
 end
