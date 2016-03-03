@@ -61,10 +61,3 @@ group :development do
   #The following gem is the latest version of papaerclip (Commented out)
   #gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 end
-
-group :production do
-  # Use Unicorn as the app server
-  gem 'unicorn'
-  # Set default app server to unicorn
-  gem "unicorn-rails"
-end
