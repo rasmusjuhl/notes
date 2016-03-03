@@ -71,7 +71,8 @@ pickle-email-*.html
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
-config/secrets.yml
+#Secrets yml added to repo since these are set in server environment
+#config/secrets.yml
 
 ## Environment normalization:
 /.bundle
