@@ -4,9 +4,6 @@ Rails.application.configure do
   config.secret_key_base = ENV["SECRET_KEY_BASE"]
   config.secret_token = ENV["SECRET_TOKEN"]
 
-  Rails.application.config.assets.precompile += %w( menu.css )
-  Rails.application.config.assets.precompile += %w( footer.css )
-
   # Code is not reloaded between requests.
   config.cache_classes = true
 
