@@ -1,16 +1,4 @@
-=stylesheet_link_tag "menu"
-=stylesheet_link_tag "footer"
-
-%ul.menu
-  %li.menu
-    %a{:href => welcome_index_url} Home
-  %li.menu
-    %a.active{:href => notes_url} Show notes
-  %li.menu
-    %a{:href => new_note_url} New Note
-  %ul.undermenu{:style => "float:right;list-style-type:none;"}
-    %li.undermenu
-      %a{:href => about_url} About
+=render "/layouts/topmenu"
 
 %h1 All notes
 
@@ -20,8 +8,6 @@
       =note.id
       =link_to note.title, note
       =link_to "Destroy", note, method: :delete, data: { confirm: "Are you sure you want to delete this note?"}
+      =link_to "Edit", edit_note_url(note)
 
-#footer
-  %span
-    Your IP address is:
-    %script{:src => "http://www.snaphost.com/tools/ip.aspx", :type => "text/javascript"}
+=render "/layouts/footer"

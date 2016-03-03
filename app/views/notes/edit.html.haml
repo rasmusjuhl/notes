@@ -1,12 +1,12 @@
 =render "/layouts/topmenu"
 
-%h1 New Note
+%h1 Edit Note
 = form_for(@note) do |f|
   =f.label :title
-  =f.text_field :title, required: true
+  =f.text_field :title, :value => @note.title, required: true
   %br
   =f.label :text
-  =f.text_field :text
+  =f.text_field :text, :value => @note.text
   =f.submit
 
 =render "/layouts/footer"

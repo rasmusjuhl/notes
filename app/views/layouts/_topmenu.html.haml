@@ -1,11 +1,10 @@
-%nav.navbar.navbar-default
-  %div.container-fluid
-    %div.navbar-header
-      %a.navbar-brand{:href => "WebSiteName"}
-    %ul.nav.navbar-nav
-      %li.active
-        %a{:href => "Home"}
-      %li
-        %a{:href => "Page1"}
-      %li
-        %a{:href => "Page2"}
+%ul.menu
+  %li.menu
+    %a{:href => welcome_index_url} Home
+  %li.menu
+    %a.active{:href => notes_url} Show notes
+  %li.menu
+    %a{:href => new_note_url} New Note
+  %ul.undermenu{:style => "float:right;list-style-type:none;"}
+    %li.undermenu
+      %a{:href => about_url} About
