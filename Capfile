@@ -10,9 +10,6 @@ require 'capistrano/rails'
 #Include rvm specific tasks
 require 'capistrano/rvm'
 
-#Unicorn
-require 'capistrano3/unicorn'
-
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
