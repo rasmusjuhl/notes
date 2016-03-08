@@ -1,5 +1,5 @@
  // Custom bootstrap variables must be set or import before bootstrap itself.
  @import 'bootstrap-sprockets';
  @import "bootstrap";
- @import menu;
- @import footer;
+ @import "menu";
+ @import "footer";
