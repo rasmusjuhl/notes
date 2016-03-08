@@ -1,3 +1,5 @@
 %h1 Details for note #{@note.id}
 %h2 #{@note.title}
 =@note.text
+%br
+=image_tag @note.attachment.url(:medium)
